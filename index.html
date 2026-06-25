@@ -7,21 +7,22 @@
       name="description"
       content="Portfolio of Yakshitha Sasanapuri, a software engineering student focused on React, WebAR, data science, and deep learning systems."
     >
-    <meta name="theme-color" content="#f7f4ef">
+    <meta name="theme-color" content="#f2eadc">
     <title>Yakshitha Sasanapuri | Software Engineering Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&family=Sacramento&display=swap"
       rel="stylesheet"
     >
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#home" aria-label="Yakshitha Sasanapuri home">
         <span class="brand-mark">YS</span>
-        <span>Yakshitha Sasanapuri</span>
+        <span>Software Engineer</span>
       </a>
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
         <span></span>
@@ -29,10 +30,10 @@
         <span></span>
       </button>
       <nav class="site-nav" data-nav>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
+        <a href="#about">About me</a>
+        <a href="#tools">Tech tools</a>
+        <a href="#projects">My projects</a>
+        <a href="#contact">Contact me</a>
         <a class="nav-action" href="assets/yakshitha-sasanapuri-resume.pdf" target="_blank" rel="noreferrer">Resume</a>
       </nav>
     </header>
@@ -40,171 +41,200 @@
     <main>
       <section class="hero section-shell" id="home">
         <div class="hero-copy">
-          <p class="section-note">Software engineering student</p>
-          <h1>Building practical web, AR, and AI systems.</h1>
-          <p class="hero-text">
-            I am Yakshitha Sasanapuri, an Integrated M.Tech Software Engineering student at
-            VIT Amaravati with hands-on work across React applications, WebAR experiences,
-            data pipelines, and deep-learning based intrusion detection.
-          </p>
+          <p class="role-line">Integrated M.Tech Software Engineering</p>
+          <h1>
+            <span class="hero-title">portfolio</span>
+            <span class="signature">Yakshitha Sasanapuri</span>
+          </h1>
+          <p class="hero-tagline">From practical ideas to working web, AR, and AI systems.</p>
           <div class="hero-actions" aria-label="Primary links">
-            <a class="button primary" href="mailto:yakshitha.22mis7037@vitapstudent.ac.in">Contact me</a>
-            <a class="button secondary" href="#projects">View projects</a>
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="mailto:yakshitha.22mis7037@vitapstudent.ac.in">Contact me</a>
           </div>
-          <dl class="quick-facts" aria-label="Profile highlights">
-            <div>
-              <dt>CGPA</dt>
-              <dd>8.73</dd>
-            </div>
-            <div>
-              <dt>Focus</dt>
-              <dd>Web, AR, AI</dd>
-            </div>
-            <div>
-              <dt>Graduation</dt>
-              <dd>May 2027</dd>
-            </div>
-          </dl>
         </div>
-        <div class="hero-visual">
-          <img src="assets/hero-tech.png" alt="Abstract technical interface with AR markers and neural network paths">
-        </div>
-      </section>
-
-      <section class="section-shell projects-section" id="projects">
-        <div class="section-heading">
-          <p class="section-note">Selected work</p>
-          <h2>Projects that connect interfaces, data, and intelligent systems.</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card feature-card">
-            <div class="project-index">01</div>
-            <h3>BiteReserve</h3>
-            <p class="project-meta">Campus canteen pre-order and table reservation web app | VIT University | Aug 2025 - Dec 2025</p>
-            <p>
-              Designed and developed a React-based campus food ordering and table reservation
-              app with reusable UI modules, RESTful data flows, cart management, and booking
-              confirmation.
-            </p>
-            <ul>
-              <li>Implemented responsive navigation flows and maintainable frontend structure.</li>
-              <li>Applied OOP principles, Agile practices, code reviews, and continuous integration.</li>
-              <li>Wrote unit tests for reservation conflict detection and cart calculations.</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-index">02</div>
-            <h3>AR Smart Menu</h3>
-            <p class="project-meta">Marker-based WebAR food visualization | VIT University | Dec 2025 - Mar 2026</p>
-            <p>
-              Built a browser-based AR application that overlays life-sized 3D food models onto
-              a physical restaurant menu using Mind-AR.js and Three.js.
-            </p>
-            <ul>
-              <li>Engineered target detection logic to show, hide, persist, and lazy-load models.</li>
-              <li>Integrated generative AI tooling for video-to-3D reconstruction into optimized GLB assets.</li>
-              <li>Deployed through HTTPS-enabled hosting so mobile camera access works through QR scanning.</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-index">03</div>
-            <h3>Deep Learning IDS</h3>
-            <p class="project-meta">Intrusion detection system | VIT University | Aug 2025 - Dec 2025</p>
-            <p>
-              Processed 200k network traffic records and engineered 68 optimized features for a
-              deep-learning intrusion detection workflow on the CIC-IDS-2017 dataset.
-            </p>
-            <ul>
-              <li>Trained CNN, Dense NN, and AutoEncoder models with 99.3 - 99.86% accuracy.</li>
-              <li>Built a balanced 100k-sample dataset and 589k-parameter CNN-IDS architecture.</li>
-              <li>Evaluated models with precision, recall, F1-score, confusion matrix, and ROC metrics.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-shell split-section" id="skills">
-        <div class="section-heading sticky-heading">
-          <p class="section-note">Technical toolkit</p>
-          <h2>Comfortable across frontend systems, data workflows, and model evaluation.</h2>
-        </div>
-        <div class="skill-panels">
-          <section class="skill-panel">
-            <h3>Languages</h3>
-            <p>C, Java, JavaScript, Python, SQL</p>
-          </section>
-          <section class="skill-panel">
-            <h3>Libraries and tools</h3>
-            <p>React, PyTorch, Matplotlib, Three.js, MongoDB, Git</p>
-          </section>
-          <section class="skill-panel">
-            <h3>Technologies</h3>
-            <p>Visual Studio, Figma, Tailwind CSS, HTML, Shadcn UI, AWS, Claude, Codex, ChatGPT</p>
-          </section>
-          <section class="skill-panel">
-            <h3>Engineering practices</h3>
-            <p>DSA, Object-Oriented Programming, REST APIs, Agile Methodology, Web/Mobile Development, CI/CD pipelines</p>
-          </section>
-        </div>
-      </section>
-
-      <section class="section-shell timeline-section" id="experience">
-        <div class="section-heading">
-          <p class="section-note">Experience</p>
-          <h2>Applied data work and team leadership.</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">Wayspire</div>
-            <div class="timeline-content">
-              <h3>Data Science Intern</h3>
-              <p>
-                Developed Python-based backend scripts and data pipelines to process and analyze
-                structured datasets, delivering actionable insights to stakeholders.
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">Jun 2023 - Jul 2025</div>
-            <div class="timeline-content">
-              <h3>Event Management Lead, The Institution of Engineers (IEI)</h3>
-              <p>
-                Headed a cross-functional team of 10 to conceptualize and organize technical
-                competitions for assessing student capabilities.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-shell education-section" id="education">
-        <div class="education-card">
-          <div>
-            <p class="section-note">Education</p>
-            <h2>Integrated M.Tech in Software Engineering</h2>
-            <p>
-              Vellore Institute of Technology, Amaravati, India
-              <br>
-              Aug 2022 - May 2027 | CGPA: 8.73
-            </p>
+        <div class="hero-showcase" aria-label="Portfolio visual">
+          <div class="screen-frame">
+            <img src="assets/hero-tech.png" alt="Abstract interface showing AR markers, neural paths, and technical panels">
           </div>
-          <div class="education-list" aria-label="Earlier education">
-            <p><strong>Sri Viswa IIT and Medical Academy</strong><span>Intermediate Education, 91% | Aug 2020 - May 2022</span></p>
-            <p><strong>Ravindra Bharathi School</strong><span>Secondary Education, 599/600 | May 2020</span></p>
+          <div class="caption-card">
+            <span>CGPA 8.73</span>
+            <span>VIT Amaravati</span>
           </div>
         </div>
       </section>
 
-      <section class="contact-section section-shell" id="contact">
-        <div>
-          <p class="section-note">Contact</p>
-          <h2>Open to software engineering, AI, WebAR, and data-focused opportunities.</h2>
+      <section class="about-band" id="about">
+        <div class="section-shell about-grid">
+          <div class="profile-card">
+            <div class="profile-initials">YS</div>
+            <p>React</p>
+            <p>WebAR</p>
+            <p>Deep Learning</p>
+          </div>
+          <div class="about-copy">
+            <p class="section-label">About me</p>
+            <h2>Software engineering student building interfaces, data flows, and intelligent systems.</h2>
+            <p>
+              I am Yakshitha Sasanapuri, an Integrated M.Tech Software Engineering student at
+              Vellore Institute of Technology, Amaravati. My work spans React applications,
+              browser-based AR, Python data pipelines, and deep-learning model evaluation.
+            </p>
+          </div>
         </div>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:yakshitha.22mis7037@vitapstudent.ac.in">yakshitha.22mis7037@vitapstudent.ac.in</a>
-          <a class="button secondary" href="assets/yakshitha-sasanapuri-resume.pdf" target="_blank" rel="noreferrer">Download resume</a>
+      </section>
+
+      <section class="section-shell tools-section" id="tools">
+        <div class="section-title-row">
+          <p class="section-label">Tech tools</p>
+          <h2>My everyday build stack.</h2>
+        </div>
+        <div class="tool-grid" aria-label="Technical skills">
+          <article class="tool-tile">
+            <span>C</span>
+            <p>C</p>
+          </article>
+          <article class="tool-tile">
+            <span>J</span>
+            <p>Java</p>
+          </article>
+          <article class="tool-tile">
+            <span>JS</span>
+            <p>JavaScript</p>
+          </article>
+          <article class="tool-tile">
+            <span>PY</span>
+            <p>Python</p>
+          </article>
+          <article class="tool-tile">
+            <span>R</span>
+            <p>React</p>
+          </article>
+          <article class="tool-tile">
+            <span>PT</span>
+            <p>PyTorch</p>
+          </article>
+          <article class="tool-tile">
+            <span>3D</span>
+            <p>Three.js</p>
+          </article>
+          <article class="tool-tile">
+            <span>DB</span>
+            <p>MongoDB</p>
+          </article>
+          <article class="tool-tile">
+            <span>SQL</span>
+            <p>SQL</p>
+          </article>
+          <article class="tool-tile">
+            <span>AWS</span>
+            <p>AWS</p>
+          </article>
+          <article class="tool-tile">
+            <span>Git</span>
+            <p>Git</p>
+          </article>
+          <article class="tool-tile">
+            <span>API</span>
+            <p>REST APIs</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <div class="section-shell">
+          <div class="project-heading">
+            <p class="section-label">My projects</p>
+            <h2>Selected software work</h2>
+          </div>
+          <div class="project-wall">
+            <article class="project-poster poster-rust">
+              <div class="poster-art">
+                <span>01</span>
+                <strong>Campus booking flow</strong>
+              </div>
+              <div class="poster-copy">
+                <h3>BiteReserve</h3>
+                <p>Campus canteen pre-order and table reservation app built with React.</p>
+                <ul>
+                  <li>Reusable UI modules and RESTful data flows.</li>
+                  <li>Cart management and booking confirmation.</li>
+                  <li>Unit tests for reservation conflicts and cart calculations.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-poster poster-ink">
+              <div class="poster-art">
+                <span>02</span>
+                <strong>Marker based WebAR</strong>
+              </div>
+              <div class="poster-copy">
+                <h3>AR Smart Menu</h3>
+                <p>Browser-based AR app overlaying life-sized 3D food models on a physical menu.</p>
+                <ul>
+                  <li>Mind-AR.js and Three.js target detection.</li>
+                  <li>Lazy-loaded GLB models scaled to real-world dimensions.</li>
+                  <li>HTTPS deployment for mobile camera access through QR scanning.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-poster poster-gold">
+              <div class="poster-art">
+                <span>03</span>
+                <strong>Network threat detection</strong>
+              </div>
+              <div class="poster-copy">
+                <h3>Deep Learning IDS</h3>
+                <p>Intrusion detection workflow trained on CIC-IDS-2017 traffic data.</p>
+                <ul>
+                  <li>200k records and 68 optimized features.</li>
+                  <li>CNN, Dense NN, and AutoEncoder models.</li>
+                  <li>99.3 - 99.86% accuracy with precision, recall, F1, confusion matrix, and ROC evaluation.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell details-section" id="experience">
+        <div class="detail-block">
+          <p class="section-label">Experience</p>
+          <h2>Data Science Intern</h2>
+          <p class="detail-meta">Wayspire</p>
+          <p>
+            Developed Python-based backend scripts and data pipelines to process and analyze
+            structured datasets, delivering actionable insights to stakeholders.
+          </p>
+        </div>
+        <div class="detail-block education-block" id="education">
+          <p class="section-label">Education</p>
+          <h2>Integrated M.Tech in Software Engineering</h2>
+          <p class="detail-meta">Vellore Institute of Technology, Amaravati | Aug 2022 - May 2027</p>
+          <p>CGPA: 8.73</p>
+          <div class="mini-list">
+            <span>Sri Viswa IIT and Medical Academy - 91%</span>
+            <span>Ravindra Bharathi School - 599/600</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="section-shell contact-grid">
+          <div class="talk-card" aria-hidden="true">
+            <span>LET'S</span>
+            <strong>TALK</strong>
+          </div>
+          <div class="contact-copy">
+            <p class="section-label">Contact me</p>
+            <h2>Open to software engineering, AI, WebAR, and data-focused opportunities.</h2>
+            <div class="contact-actions">
+              <a class="button primary" href="mailto:yakshitha.22mis7037@vitapstudent.ac.in">Email me</a>
+              <a class="button secondary" href="assets/yakshitha-sasanapuri-resume.pdf" target="_blank" rel="noreferrer">Download resume</a>
+            </div>
+            <p class="email-line">yakshitha.22mis7037@vitapstudent.ac.in</p>
+          </div>
         </div>
       </section>
     </main>
